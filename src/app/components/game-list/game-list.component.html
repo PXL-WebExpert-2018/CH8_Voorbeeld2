@@ -1,0 +1,26 @@
+<app-add-game (addedGame)="laadGames()"></app-add-game>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Publisher</th>
+      <th>Rating</th>
+      <th>PATCH request</th>
+      <th>PUT request</th>
+      <th>GET request</th>
+      <th>Verwijder</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let game of games$ | async">
+      <td>{{game.title}}</td>
+      <td>({{game.publisher}})</td>
+      <td>Rating: {{ game.rating }} / 10</td>
+      <td><button (click)="updatePatch(game)">Zet rating op 10 via PATCH</button></td>
+      <td><button (click)="updatePut(game)">rating 0, publisher+ABC via PUT</button></td>
+      <td><button (click)="getGameInfo(game.id)">GET single game info</button></td>
+      <td><button (click)="verwijder(game)" [disabled]="game.id == '-LTrjM8Fln3x7Ly96GOV' || game.id == '-LTrjOJeycX9ZGc9BBTh'">verwijder</button></td>
+    </tr>
+  </tbody>
+</table>

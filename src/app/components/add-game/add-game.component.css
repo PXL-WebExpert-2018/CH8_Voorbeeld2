@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+:host{
+    display: block;
+    width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #8FC0A9;
+    color: white; 
+}
+
+input{
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+
+label{
+    display: block;
+    padding: 10px;
+    width: 100%;
+}

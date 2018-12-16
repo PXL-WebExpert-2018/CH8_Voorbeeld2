@@ -1,0 +1,6 @@
+<form #gameForm="ngForm" (ngSubmit)="nieuw(gameForm)">
+  <label>Title</label><input type="text" name="title" [(ngModel)]="newTitle" />
+  <label>publisher</label><input type="text" name="publisher" [(ngModel)]="newPublisher" />
+  <label>Rating</label><input type="range" min="0" max="10" step="1" name="rating" [(ngModel)]="newRating" />
+  <input type="submit" name="submit" value="submit" />
+</form>

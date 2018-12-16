@@ -1,0 +1,23 @@
+:host{
+    
+}
+
+section{
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    margin: 60px 0px 50px 0px;
+}
+
+section img{
+    position: absolute;
+    left: 10px;
+    top: -40px;
+}
+
+section h1{
+    width: 75%;
+    margin: 0 auto;
+    text-align: right;
+}
